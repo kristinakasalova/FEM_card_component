@@ -112,7 +112,8 @@ button:hover {
 }
 
 .attribution {
-    bottom:0% ;
+    bottom: 0% ;
+    position: absolute;
     text-align: center;
 }
 
@@ -120,9 +121,7 @@ button:hover {
 
 @media only screen and (min-width: 421px) {
 .wrap {
-position: relative;
 justify-self: auto;
-top: 50%;
 
 }
 
@@ -132,7 +131,7 @@ border-radius: 8px;
 background-color: #fff;
 position: relative;
 max-width: 600px;
-
+top: 50%;
 }
 
 .pic {
