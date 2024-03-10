@@ -1,0 +1,165 @@
+@font-face {
+    font-family: montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    font-weight: 500,700;
+}
+
+
+
+
+@font-face {
+    font-family: Fraunces;
+    src: url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700');
+    font-weight: 700;
+}
+
+html {
+    background-color: hsl(30, 38%, 92%);
+    align-self:center;
+    justify-self: center;
+}
+
+.wrap {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    /* column-span: 1; */
+    display: grid;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    position: inherit;
+
+}
+.pic .imgDt{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.imgMb {
+        max-width: 100%;
+        max-height: 100% ;
+            border-radius: 8px 8px 0 0;
+}
+.imgDt {
+    display: none ;
+}
+
+.frame {
+    padding: 15px;
+}
+
+h1 {
+    font-family: "Fraunces";
+    font-weight: 700;
+
+}
+
+h2 {
+    color: hsl(228, 12%, 48%);
+     font-family: "Montserrat", sans-serif;
+     text-transform: uppercase;
+     font-weight: 500;
+     font-size: 14px;
+     letter-spacing: 5px;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+    padding-bottom: 30px;
+
+}
+.newPrice {
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    font-weight: 700;
+    color:  hsl(158, 36%, 37%);
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.button {
+    color: #fff;
+    display: block;
+    background-color: hsl(158, 36%, 37%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;   
+    font-weight: 700;
+    /* bottom: auto    ; */
+width: 100%;
+
+
+
+    
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.attribution {
+    bottom:0% ;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 421px) {
+.wrap {
+position: relative;
+justify-self: auto;
+top: 50%;
+
+}
+
+.box {
+grid-template-columns: repeat(2,1fr);
+border-radius: 8px;
+background-color: #fff;
+position: relative;
+max-width: 600px;
+
+}
+
+.pic {
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.frame {
+    padding: 30px;
+}
+/* .imgDt {
+max-width: 100%;
+max-height: auto ;
+} */
+
+.imgMb {
+    display: none;
+      
+}
+.imgDt {
+    display: inline-block;
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+    border-radius: 8px 0 0 8px;
+}
+
+}
+
+
